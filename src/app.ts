@@ -9,7 +9,7 @@ dotenv.config();
 const PORT = process.env.PORT;
 
 app.use(express.json());
-app.use('/users', UserRoutes);
+app.use('/api/users', UserRoutes);
 
 app.get('/', (req, res) => {
     res.send('Server running!');
